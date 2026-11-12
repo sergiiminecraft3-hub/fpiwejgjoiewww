@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feat - Адаптивний дизайн</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .section {
+            padding: 40px 20px;
+            background-color: #fff8f5;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            border: 2px solid #e0e0e0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container h2 {
+            color: #d9534f;
+            margin-bottom: 10px;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+
+        .container > p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px;
+        }
+
+        .col {
+            flex: 0 0 25%;
+            max-width: 25%;
+            padding: 10px;
+        }
+
+        .card {
+            border: 1px solid #2b5468;
+            border-radius: 4px;
+            padding: 20px 15px;
+            background: #fff;
+            height: 100%;
+        }
+
+        .card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        @media screen and (max-width: 768px) {
+            .col {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .col {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="section">
+        <div class="container">
+            <h2>FEATU</h2>
+            <p>After the first 50 completed projects to make a mistake with the deadlines almost unreal.</p>
+            
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <h3>Experi</h3>
+                        <p>After the first 50 completed projects to make a mistake with the deadlines almost unreal. After the first hundred projects to break the promises already impossible.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <h3>Commu</h3>
+                        <p>After the first 50 completed projects to make a mistake with the deadlines almost unreal. After the first hundred projects to break the promises already impossible.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <h3>Resp</h3>
+                        <p>After the first 50 completed projects to make a mistake with the deadlines almost unreal. After the first hundred projects to break the promises already impossible.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <h3>Dea</h3>
+                        <p>After the first 50 completed projects to make a mistake with the deadlines almost unreal. After the first hundred projects to break the promises already impossible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
